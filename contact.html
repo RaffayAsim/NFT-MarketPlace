@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <!-- <BootStrap Link> -->
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+        crossorigin="anonymous"
+      />
+      <script
+        src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"
+      ></script>
+
+        <!-- <Endded> -->
+        <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.ico/icon2 (1).png" type="image/x-icon">
+
+  <link rel="stylesheet" href="./sttle.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+
+  <body id="top">
+  
+
+    <header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./image/Lofo (2).png" alt="NAFT logo">
+      </a>
+
+      <div class="header-right">
+
+        <div class="header-nav-wrapper">
+
+          <button class="navbar-toggle-btn" data-navbar-toggle-btn>
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
+          <nav class="navbar" data-navbar>
+
+            <ul class="navbar-list">
+
+              <li>
+                &nbsp; &nbsp; &nbsp; &nbsp;<a href="market.html" class="navbar-link">Home</a>
+              </li>
+
+              <li>
+                &nbsp; &nbsp; &nbsp; &nbsp;<a href="About.html" class="navbar-link">About</a>
+              </li>
+
+              <li>
+                &nbsp; &nbsp; &nbsp; &nbsp;<a href="Explore.html" class="navbar-link">Explore</a>
+              </li>
+
+
+              <li>
+                &nbsp; &nbsp; &nbsp; &nbsp;<a href="contact.html" class="navbar-link">Contact</a>
+              </li>
+
+  
+              <li>
+                &nbsp; &nbsp; &nbsp; &nbsp;<a href="faq/faq.html" class="navbar-link">FAQ</a>
+              </li>
+
+            </ul>
+
+          </nav>
+
+        </div>
+
+        <div class="header-actions">
+          
+          <button class="btn btn-primary">Connect Wallet</button>
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <form class="px-5  py-5">
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inpunameEmail4" style="color: beige;">Name</label>
+        <input type="email" class="form-control" id="inputEmail4" />
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputLastName" style="color: beige;">Last Name</label>
+        <input type="password" class="form-control" id="inputPassword4" />
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputAddress" style="color: beige;">Address</label>
+      <input
+        type="text"
+        class="form-control"
+        id="inputAddress"
+        placeholder="1234 Main St"
+      />
+    </div>
+    <div class="form-group">
+      <label for="inputAddress2" style="color: beige;">Address 2</label>
+      <input
+        type="text"
+        class="form-control"
+        id="inputAddress2"
+        placeholder="Apartment-Street Number"
+      />
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputCity" style="color: beige;">Message</label>
+        <input type="text" style="height: 150px;" class="form-control" id="inputCity" />
+      </div>
+     
+    </div>
+    <div class="form-group">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck" />
+        <label class="form-check-label" for="gridCheck" style="color: beige;"> Comform Detials </label>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary"  onclick="showAlert()">Connect</button>
+
+    <script>
+      function showAlert() {
+        alert("Your Request has been move forword");
+      }
+    </script>
+  </form>
+<!-- form with address -->
+<div
+id="map-container-google-1"
+class="z-depth-1-half map-container"
+style="height: 500px"
+>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198216.8717544316!2d-100.56405637116524!3d38.48167293507816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8709ee170c80045f%3A0x8908b90207707613!2sGarden%20City%2C%20KS%2067846%2C%20USA!5e0!3m2!1sen!2s!4v1669924977670!5m2!1sen!2s"
+width="100%"
+height="350" 
+style="border:0;" allowfullscreen="" l
+oading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+  
+
+<!-- 
+    - #FOOTER
+  -->
+
+  <footer>
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./image/Lofo (2).png" alt="NAFT logo">
+          </a>
+
+          <p class="footer-brand-text">
+            There are many variations of passages of but the majority have suffered alterations cted humour, or
+            randomsed words
+            which htly believable. If you are going
+          </p>
+
+          <h3 class="h4 social-title">Join the community</h3>
+
+          <ul class="social-list">
+
+            <!-- <li>
+              <a href="https://github.com/codewithsadee" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li> -->
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-link-box">
+
+          <ul class="footer-list">
+
+            <li>
+              <h3 class="h3 footer-item-title">Marketplace</h3>
+            </li>
+
+            <li class="footer-item">
+              <a href="#" class="footer-link">Gaming</a>
+            </li>
+
+            <li class="footer-item">
+              <a href="#" class="footer-link">Product</a>
+            </li>
+
+            <li class="footer-item">
+              <a href="#" class="footer-link">All NFTs</a>
+            </li>
+
+            <li class="footer-item">
+              <a href="#" class="footer-link">Social Network</a>
+            </li>
+
+            <li class="footer-item">
+              <a href="#" class="footer-link">Domain Names</a>
+            </li>
+
+            <li class="footer-item">
+              <a href="#" class="footer-link">Collectibles</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <h3 class="h3 footer-item-title">Explore</h3>
+            </li>
+
+            <li class="footer-item">
+              <a href="#" class="footer-link">Featured Drops</a>
+            </li>
+
+            <li class="footer-item">
+              <a href="#" class="footer-link">Live Auctions</a>
+            </li>
+
+            <li class="footer-item">
+              <a href="#" class="footer-link">All NFTs</a>
+            </li>
+
+            <li class="footer-item">
+              <a href="#" class="footer-link">Collections</a>
+            </li>
+
+            <li class="footer-item">
+              <a href="#" class="footer-link">Top Seller</a>
+            </li>
+
+            <li class="footer-item">
+              <a href="#" class="footer-link">Items Details</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <h3 class="h3 footer-item-title">Supports</h3>
+            </li>
+
+            <li class="footer-item">
+              <a href="#" class="footer-link">Settings & Privacy</a>
+            </li>
+
+            <li class="footer-item">
+              <a href="#" class="footer-link">Help & Support</a>
+            </li>
+
+            <li class="footer-item">
+              <a href="#" class="footer-link">Live Auctions</a>
+            </li>
+
+            <li class="footer-item">
+              <a href="#" class="footer-link">Item Details</a>
+            </li>
+
+            <li class="footer-item">
+              <a href="#" class="footer-link">24/7 Supports</a>
+            </li>
+
+            <li class="footer-item">
+              <a href="#" class="footer-link">Blog</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2022 <a href="#">RaffayAsim</a> all rights reserved
+        </p>
+
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+
+          <a href="#">Terms & Conditions</a>
+        </div>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="scrpt.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>
